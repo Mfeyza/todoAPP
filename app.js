@@ -29,6 +29,13 @@ function removeTask(button) {
 function check() {
   let taskList = document.getElementById("tasklist");
   if (taskList.children.length === 0) {
-    alert("Congratulations, All Tasks Completed"); 
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Congratulations, All Tasks Completed",
+      showConfirmButton: false,
+      timer: 1500,
+      
+    });
   }
 }
