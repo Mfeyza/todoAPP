@@ -29,6 +29,6 @@ function removeTask(button) {
 function check() {
   let taskList = document.getElementById("tasklist");
   if (taskList.children.length === 0) {
-    alert("Tebrikler! Tüm görevler tamamlandı."); 
+    alert("Congratulations, All Tasks Completed"); 
   }
 }
