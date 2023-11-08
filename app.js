@@ -23,4 +23,12 @@ function addTask() {
 function removeTask(button) {
   let taskItem = button.parentElement;
   taskItem.remove(); 
+  check();
+}
+
+function check() {
+  let taskList = document.getElementById("tasklist");
+  if (taskList.children.length === 0) {
+    alert("Tebrikler! Tüm görevler tamamlandı."); 
+  }
 }
