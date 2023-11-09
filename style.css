@@ -16,7 +16,7 @@ body{
     box-shadow:
     inset 0 0 50px #fff,      
     inset 20px 0 80px rgb(47, 0, 255),  
-    inset -20px 0 80px #0ff, 
+    inset -20px 0 80px rgb(3, 64, 64), 
     inset 20px 0 300px rgb(46, 3, 46),  
     inset -20px 0 300px rgb(4, 50, 50), 
     0 0 50px #fff,           
@@ -25,10 +25,26 @@ body{
     display: flex;
     flex-direction: column;       
 }
-   
+.taskcontainer{
+    overflow: auto;
+
+}
+
+.taskcontainer::-webkit-scrollbar-thumb {
+    width: 10px; /* Scroll çubuğu genişliği */
+  }
+  
+.taskcontainer::-webkit-scrollbar-thumb {
+    background-color: #571111; /* Scroll çubuğu başparmak rengi */
+    border-radius: 5px; /* Scroll çubuğu başparmak yuvarlatması */
+  }
+  
+  .taskcontainer:-webkit-scrollbar-track {
+    background-color: #ca3434; /* Scroll çubuğu arka plan rengi */
+  }
 
 h1{
-    color: #c9bcbc;
+    color: rgb(162, 58, 58);
 }
 
 .inputcontainer{
@@ -53,7 +69,7 @@ input[type="date"]{
     font-family:'Playpen Sans';
     background-color: transparent;
     text-shadow: rgb(89, 10, 10) 1px 0 10px;
-    color: azure;
+    color: rgb(131, 175, 175);
 }
 
 button{
@@ -113,3 +129,4 @@ select:focus
 input[type="date"]:focus{
     border-color: rgb(30, 210, 189);
 }
+

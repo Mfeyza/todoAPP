@@ -19,10 +19,11 @@ function addTask() {
     dateInput.value = "";
   }
 }
-
+let deletedtask=0;
 function removeTask(button) {
   let taskItem = button.parentElement;
-  taskItem.remove(); 
+  taskItem.remove();
+  deletedtask++ 
   check();
 }
 
@@ -32,10 +33,31 @@ function check() {
     Swal.fire({
       position: "center",
       icon: "success",
-      title: "Congratulations, All Tasks Completed",
+      title: `Congratulations, you have completed ${deletedtask} task 🤘🏻💯`,     
       showConfirmButton: false,
-      timer: 1500,
+      timer: 5000,
       
-    });
+     });
+  }
+}
+document.getElementById("task").addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    addTask();
+  }
+});
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Backspace") {
+    removeLastTask();
+  }
+});
+
+function removeLastTask() {
+  let taskList = document.getElementById("tasklist");
+  let lastTask = taskList.lastChild;
+
+  if (lastTask) {
+    lastTask.remove();
+    check();
   }
 }
