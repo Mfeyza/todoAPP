@@ -31,16 +31,16 @@ body{
 }
 
 .taskcontainer::-webkit-scrollbar-thumb {
-    width: 10px; /* Scroll çubuğu genişliği */
+    width: 10px; 
   }
   
 .taskcontainer::-webkit-scrollbar-thumb {
-    background-color: #571111; /* Scroll çubuğu başparmak rengi */
-    border-radius: 5px; /* Scroll çubuğu başparmak yuvarlatması */
+    background-color: #571111; 
+    border-radius: 5px; 
   }
   
   .taskcontainer:-webkit-scrollbar-track {
-    background-color: #ca3434; /* Scroll çubuğu arka plan rengi */
+    background-color: #ca3434; 
   }
 
 h1{
@@ -130,3 +130,42 @@ input[type="date"]:focus{
     border-color: rgb(30, 210, 189);
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .inputcontainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  input[type="text"], select, input[type="date"], button {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .taskcontainer {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .taskcontainer {
+    height: auto;
+  }
+
+  .inputcontainer, .taskcontainer {
+    width: 100%;
+  }
+
+  button {
+    width: 60%;
+  }
+}
