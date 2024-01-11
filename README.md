@@ -19,7 +19,7 @@ Responsive Design: The app is styled to be visually appealing and works well on 
 
 <div align="center">
  
-  <img src="./assets/Screenshot_3.jpg"  width="90.5%" height="650" />
+  <img src="./Animationtodo.gif"  width="90.5%" height="650" />
 </div>
 
 
