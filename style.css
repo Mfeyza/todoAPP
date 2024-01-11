@@ -174,3 +174,21 @@ input[type="date"]:focus{
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .inputcontainer, .taskcontainer {
+    width: 100%;
+  }
+
+  input[type="text"], select, input[type="date"] {
+    font-size: 1em;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+}
