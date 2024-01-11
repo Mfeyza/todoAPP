@@ -133,39 +133,44 @@ input[type="date"]:focus{
 @media only screen and (max-width: 768px) {
   .container {
     width: 90%;
-    padding: 10px;
+    margin: 0 auto;
   }
 
-  .inputcontainer {
+  .inputcontainer, .taskcontainer {
     flex-direction: column;
-    width: 100%;
+    align-items: center;
   }
 
   input[type="text"], select, input[type="date"], button {
-    width: 90%;
-    margin: 10px 0;
-  }
-
-  .taskcontainer {
     width: 100%;
+    margin: 5px 0;
   }
-}
 
-
-@media only screen and (max-width: 480px) {
   h1 {
-    font-size: 1.5em;
+    font-size: 24px;
   }
 
   .taskcontainer {
     height: auto;
   }
+}
 
-  .inputcontainer, .taskcontainer {
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .nameinput, .inputcontainer, .taskcontainer {
     width: 100%;
+    padding: 10px;
+  }
+
+  input[type="text"], select, input[type="date"] {
+    font-size: 14px;
   }
 
   button {
-    width: 60%;
+    padding: 10px;
+    font-size: 16px;
   }
 }
