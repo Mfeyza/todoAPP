@@ -25,23 +25,23 @@ body{
     display: flex;
     flex-direction: column;       
 }
-.taskcontainer{
-    overflow: auto;
+.taskcontainer {
+  overflow: auto;
+}
 
+.taskcontainer::-webkit-scrollbar {
+  width: 10px; 
 }
 
 .taskcontainer::-webkit-scrollbar-thumb {
-    width: 10px; 
-  }
-  
-.taskcontainer::-webkit-scrollbar-thumb {
-    background-color: #571111; 
-    border-radius: 5px; 
-  }
-  
-  .taskcontainer:-webkit-scrollbar-track {
-    background-color: #ca3434; 
-  }
+  background-color: #a33030; 
+  border-radius: 5px; 
+}
+
+.taskcontainer::-webkit-scrollbar-track {
+  background-color: #0b3852; 
+}
+
 
 h1{
     color: rgb(162, 58, 58);
